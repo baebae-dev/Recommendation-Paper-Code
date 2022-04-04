@@ -16,3 +16,13 @@ Recommendation_System_paper_Code
 ```
 
 ## 실습 모델
+
+### DeepFM
+To train DeepFM model for this dataset, run
+
+data : [competition website](https://www.kaggle.com/c/porto-seguro-safe-driver-prediction) and put them here.
+
+```
+$ cd example
+$ python main.py
+```
