@@ -5,7 +5,6 @@ from preprocess_data import get_dataset_1M
 import os
 from pathlib import Path
 
-
 p = Path(__file__).parents[1]
 
 ROOT_DIR=os.path.abspath(os.path.join(p, '..', 'data/'))

@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 
-p = Path(__file__).parents[1]
+# p = Path(__file__).parents[1]
 
-OUTPUT_DIR_TRAIN=os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/train.dat'))
-OUTPUT_DIR_TEST=os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/test.dat'))
-ROOT_DIR=os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/ratings.dat'))
+OUTPUT_DIR_TRAIN='raw/ml-1m/train.dat' #os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/train.dat'))
+OUTPUT_DIR_TEST='raw/ml-1m/test.dat' #os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/test.dat'))
+ROOT_DIR='raw/ml-1m/ratings.dat' #os.path.abspath(os.path.join(p, '..', 'data/raw/ml-1m/ratings.dat'))
 
 NUM_USERS=6040
 NUM_TEST_RATINGS=10
