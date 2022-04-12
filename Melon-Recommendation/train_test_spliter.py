@@ -80,14 +80,14 @@ class Spliter:
         train, val = self._split_data(playlists, ratio)
 
         print("Original train...")
-        write_json(train, "orig/train.json")
+        write_json(train, "orig/train.json","./arena_data/")
         print("Original val...")
-        write_json(val, "orig/val.json")
+        write_json(val, "orig/val.json","./arena_data/")
 
         print("Masked val...")
         val_q, val_a = self._mask_data(val)
-        write_json(val_q, "questions/val.json")
-        write_json(val_a, "answers/val.json")
+        write_json(val_q, "questions/val.json","./arena_data/")
+        write_json(val_a, "answers/val.json","./arena_data/")
 
 if __name__ == "__main__":
     fire.Fire(Spliter)
